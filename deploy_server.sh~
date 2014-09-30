@@ -6,7 +6,7 @@
 
 
 
-sudo -i
+sudo su
 
 export NAME_APP=$1
 
