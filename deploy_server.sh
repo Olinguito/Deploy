@@ -6,6 +6,8 @@
 
 
 export NAME_APP=$1
+echo export  NAME_APP=$($NAME_APP) >> ~/.bash_profile
+
 
 # add key mongo-org
 apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10 
