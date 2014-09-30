@@ -1,0 +1,27 @@
+#!/bin/sh
+# s0c5
+
+source ~/.bash_profile
+echo "working ..."
+git --work-tree=/var/www/ --git-dir=/opt/$NAME_APP.git/ checkout -f
+
+echo "only need one mine more :) "
+cd /var/www/server/
+
+echo "wait, im installing the dependences"
+nvm use  $NAME_APP
+npm install
+echo " ready :) wait wait wait"
+sudo pm2 kill
+sudo pm2 start server.coffee
+echo ":) okay -> Server RUN :) "
+echo " ██████╗ ██╗     ██╗███╗   ██╗ ██████╗ ██╗   ██╗██╗████████╗ ██████╗ ";
+echo "██╔═══██╗██║     ██║████╗  ██║██╔════╝ ██║   ██║██║╚══██╔══╝██╔═══██╗";
+echo "██║   ██║██║     ██║██╔██╗ ██║██║  ███╗██║   ██║██║   ██║   ██║   ██║";
+echo "██║   ██║██║     ██║██║╚██╗██║██║   ██║██║   ██║██║   ██║   ██║   ██║";
+echo "╚██████╔╝███████╗██║██║ ╚████║╚██████╔╝╚██████╔╝██║   ██║   ╚██████╔╝";
+echo " ╚═════╝ ╚══════╝╚═╝╚═╝  ╚═══╝ ╚═════╝  ╚═════╝ ╚═╝   ╚═╝    ╚═════╝ ";
+echo "                                                                     ";
+
+echo " by: Olinguito Team  :D"
+
