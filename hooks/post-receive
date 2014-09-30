@@ -2,7 +2,7 @@
 # s0c5
 
 
-source ~/.profile && ~/.bashrc 
+bash  ~/.profile && ~/.bashrc 
 
 echo "working ..."
 git --work-tree=/var/www/ --git-dir=/opt/$NAME_APP.git/ checkout -f
