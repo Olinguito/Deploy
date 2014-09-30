@@ -5,9 +5,6 @@
 #
 
 
-
-sudo su
-
 export NAME_APP=$1
 
 # add key mongo-org
@@ -33,8 +30,7 @@ nvm alias $NAME_APP v0.11.14
 
 npm install pm2 -g --unsafe-perm
 
-mkdir /opt/$NAME_APP.git
-cd /opt/$NAME_APP.git
+mkdir /opt/$NAME_APP.git & cd /opt/$NAME_APP.git
 
 # init empty server repository
 
