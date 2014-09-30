@@ -6,7 +6,7 @@
 
 
 export NAME_APP=$1
-echo export  NAME_APP=$($NAME_APP) >> ~/.bash_profile
+echo export  NAME_APP=$($NAME_APP) >> ~/.bashrc
 
 
 # add key mongo-org

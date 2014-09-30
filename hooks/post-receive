@@ -1,8 +1,9 @@
 #!/bin/sh
 # s0c5
 
-sudo -i
-source ~/.bash_profile
+
+source ~/.profile && ~/.bashrc 
+
 echo "working ..."
 git --work-tree=/var/www/ --git-dir=/opt/$NAME_APP.git/ checkout -f
 
