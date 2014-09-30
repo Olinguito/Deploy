@@ -32,9 +32,10 @@ nvm alias $NAME_APP v0.11.14
 
 #install npms
 
-npm install pm2 -g --unsafe-perm
+npm install pm2 grunt-cli grunt  -g --unsafe-perm
 
-mkdir /opt/$NAME_APP.git & cd /opt/$NAME_APP.git
+mkdir /opt/$NAME_APP.git 
+cd /opt/$NAME_APP.git
 
 # init empty server repository
 
@@ -44,6 +45,7 @@ cd /hooks/
 
 curl -sL https://raw.githubusercontent.com/Olinguito/Deploy/master/hooks/post-receive > post-receive
 chmod +x post-receive
+
 
 
 echo " ██████╗ ██╗     ██╗███╗   ██╗ ██████╗ ██╗   ██╗██╗████████╗ ██████╗ ";
