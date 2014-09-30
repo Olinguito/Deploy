@@ -6,7 +6,7 @@
 
 
 export NAME_APP=$1
-echo export  NAME_APP=$($NAME_APP) >> ~/.bashrc
+echo "export  NAME_APP=$NAME_APP" >> ~/.bashrc
 
 
 # add key mongo-org
@@ -25,7 +25,7 @@ service mongodb start
 curl https://raw.githubusercontent.com/creationix/nvm/v0.11.1/install.sh | bash
 
 #refresh enviroment
-source ~/.profile && source ~/.bash_profile
+source ~/.profile && source ~/.bashrc
 
 # install node
 
