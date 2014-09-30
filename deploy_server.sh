@@ -13,7 +13,11 @@ apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10
 echo 'deb http://downloads-distro.mongodb.org/repo/debian-sysvinit dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list 
  # update packages
 apt-get update
-apt-get install -y mongodb-org git   #install mongo
+apt-get install -y mongodb git   #install mongo
+
+#service start mongodb
+
+service mongodb start
 
 #install NVM 
 curl https://raw.githubusercontent.com/creationix/nvm/v0.11.1/install.sh | bash
