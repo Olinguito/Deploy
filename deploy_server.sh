@@ -29,6 +29,8 @@ source ~/.profile && source ~/.bash_profile
 
 nvm install v0.11.14
 nvm alias $NAME_APP v0.11.14
+nvm use $NAME_APP
+
 
 #install npms
 
@@ -41,7 +43,7 @@ cd /opt/$NAME_APP.git
 
 git init --bare 
 
-cd /hooks/
+cd hooks/
 
 curl -sL https://raw.githubusercontent.com/Olinguito/Deploy/master/hooks/post-receive > post-receive
 chmod +x post-receive
